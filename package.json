@@ -1,0 +1,23 @@
+{
+  "name": "my-to-do-list",
+  "version": "2.0.0",
+  "description": "A professional, Apple-inspired to-do list application with time tracking",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000 -o",
+    "build": "npm run build:css",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./styles.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./styles.css --watch"
+  },
+  "keywords": [
+    "todo",
+    "task-manager",
+    "productivity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "http-server": "^14.1.1"
+  }
+}
